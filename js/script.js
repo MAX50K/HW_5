@@ -68,5 +68,36 @@ switch (month) {
         break;
 }
 // 4
+let number1 = prompt("Choose a number").toLowerCase()
+let number2 = prompt("Choose a number").toLowerCase()
+let operator = prompt("Choose a operator ('+', '-', '*', '/') На 0 не ділити").toLowerCase()
+switch (month) {
+    case "+":
+        alert("Click OK")
+        let total1 = (number1 + number2)
+        alert(number1 ,"+", number2, "=", total1)
+        break;
 
+    case "-":
+        alert("Click OK")
+        let total2 = (number1 - number2)
+        alert(number1 ,"-", number2, "=", total2)
+        break;
+
+    case "/":
+        alert("Click OK")
+        let total3 = (number1 / number2)
+        alert(number1 ,"/", number2, "=", total3)
+        break;
+
+    case "*":
+        alert("Click OK")
+        let total4 = (number1 + number2)
+        alert(number1 ,"*", number2, "=", total4)
+        break;
+
+    default:
+        alert("Looks like something wrong")
+        break;
+}
 // не треба 5
