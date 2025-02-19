@@ -5,7 +5,7 @@ switch (drink) {
         alert("You Chose Coffee!");
         break;
 
-    case "coffee":
+    case "tea":
         alert("You Chose Tea!");
         break;
 
@@ -39,27 +39,27 @@ switch (day) {
 // 3
 let month = prompt("Choose a month").toLowerCase()
 switch (month) {
-    case "January":
-    case "February" :
-    case "December":
+    case "january":
+    case "february" :
+    case "december":
         alert("The month is during Winter")
         break;
 
-    case "March" :
-    case "April" :
-    case "May":
+    case "march" :
+    case "april" :
+    case "may":
         alert("The month is during Spring")
         break;
 
-    case "June" :
-    case "July" :
-    case "August":
+    case "june" :
+    case "july" :
+    case "august":
         alert("The month is during Summer")
         break;
 
-    case "September" :
-    case "October" :
-    case "November":
+    case "september" :
+    case "october" :
+    case "november":
         alert("The month is during Autumn")
         break;
 
@@ -68,32 +68,32 @@ switch (month) {
         break;
 }
 // 4
-let number1 = prompt("Choose a number").toLowerCase()
-let number2 = prompt("Choose a number").toLowerCase()
-let operator = prompt("Choose a operator ('+', '-', '*', '/') На 0 не ділити").toLowerCase()
-switch (month) {
+let number1 = prompt("Choose a number")
+let number2 = prompt("Choose a number")
+let operator = prompt("Choose a operator ('+', '-', '*', '/') На 0 не ділити")
+switch (operator) {
     case "+":
         alert("Click OK")
-        let total1 = (number1 + number2)
-        alert(number1 ,"+", number2, "=", total1)
+        let total1 = (Number(number1) + Number(number2))
+        alert(`${number1} + ${number2} = ${total1}`)
         break;
 
     case "-":
         alert("Click OK")
-        let total2 = (number1 - number2)
-        alert(number1 ,"-", number2, "=", total2)
+        let total2 = (Number(number1) - Number(number2))
+        alert(`${number1} - ${number2} = ${total2}`)
         break;
 
     case "/":
         alert("Click OK")
-        let total3 = (number1 / number2)
-        alert(number1 ,"/", number2, "=", total3)
+        let total3 = (Number(number1) / Number(number2))
+        alert(`${number1} / ${number2} = ${total3}`)
         break;
 
     case "*":
         alert("Click OK")
-        let total4 = (number1 + number2)
-        alert(number1 ,"*", number2, "=", total4)
+        let total4 = (Number(number1) * Number(number2))
+        alert(`${number1} * ${number2} = ${total4}`)
         break;
 
     default:
